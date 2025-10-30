@@ -1,6 +1,9 @@
 # Weather App Flutter
 A weather application built with Flutter.
 
+## Screenshot
+![App Screenshot](assets/screenshot.png)
+
 ## Features
 - Automatically detects user's current location
 - Displays comprehensive weather data including:
