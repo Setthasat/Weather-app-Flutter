@@ -70,7 +70,6 @@ class _WeatherPageState extends State<WeatherPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // City Name
                     Text(
                       _weather!.cityName,
                       style: TextStyle(
@@ -90,8 +89,6 @@ class _WeatherPageState extends State<WeatherPage> {
                       ),
                     ),
                     SizedBox(height: 30),
-
-                    // Main Weather Card
                     Expanded(
                       child: Column(
                         children: [
@@ -112,7 +109,6 @@ class _WeatherPageState extends State<WeatherPage> {
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                // Weather Animation
                                 SizedBox(
                                   height: 130,
                                   child: Lottie.asset(
@@ -123,8 +119,6 @@ class _WeatherPageState extends State<WeatherPage> {
                                   ),
                                 ),
                                 SizedBox(height: 16),
-
-                                // Temperature
                                 Text(
                                   '${_weather!.temperature.round()}°',
                                   style: TextStyle(
@@ -135,8 +129,6 @@ class _WeatherPageState extends State<WeatherPage> {
                                   ),
                                 ),
                                 SizedBox(height: 6),
-
-                                // Condition
                                 Text(
                                   _weather!.mainCondition,
                                   style: TextStyle(
@@ -147,8 +139,6 @@ class _WeatherPageState extends State<WeatherPage> {
                                   ),
                                 ),
                                 SizedBox(height: 4),
-
-                                // Feels Like
                                 Text(
                                   'Feels like ${_weather!.feelsLike.round()}°',
                                   style: TextStyle(
@@ -161,8 +151,6 @@ class _WeatherPageState extends State<WeatherPage> {
                             ),
                           ),
                           SizedBox(height: 16),
-
-                          // Weather Details Grid
                           Row(
                             children: [
                               Expanded(
@@ -183,8 +171,6 @@ class _WeatherPageState extends State<WeatherPage> {
                             ],
                           ),
                           SizedBox(height: 12),
-
-                          // Additional Info Row
                           Row(
                             children: [
                               Expanded(
